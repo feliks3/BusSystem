@@ -1,0 +1,154 @@
+python3 BusSystem.py 
+
+
+*******************
+add 4 buses
+
+Bus:1 2 3 4 
+Line:1 2 3 4 
+Route:route1_1 route1_2 route2_1 route2_2 route3_1 route3_2 route4_1 route4_2 
+Stop:1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 21 22 23 24 25 
+
+Bus details:
+bus 1: Line1 10:00
+bus 2: Line2 13:00
+bus 3: Line3 15:00
+bus 4: Line4 11:00
+
+Line details:
+Line1: route1_1 route1_2 
+Line2: route2_1 route2_2 
+Line3: route3_1 route3_2 
+Line4: route4_1 route4_2 
+
+Route details:
+route1_1: stop1 stop2 stop3 stop4 stop5 
+route1_2: stop5 stop4 stop3 stop2 stop1 
+route2_1: stop6 stop7 stop8 stop9 stop10 
+route2_2: stop10 stop9 stop8 stop7 stop6 
+route3_1: stop11 stop12 stop13 stop14 stop15 
+route3_2: stop15 stop14 stop13 stop12 
+route4_1: stop21 stop22 stop23 stop24 stop25 
+route4_2: stop25 stop14 stop22 stop12 
+
+*******************
+remove bus 2 3 and 4
+
+Bus:1 
+Line:1 2 3 4 
+Route:route1_1 route1_2 route2_1 route2_2 route3_1 route3_2 route4_1 route4_2 
+Stop:1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 21 22 23 24 25 
+
+Bus details:
+bus 1: Line1 10:00
+
+Line details:
+Line1: route1_1 route1_2 
+Line2: route2_1 route2_2 
+Line3: route3_1 route3_2 
+Line4: route4_1 route4_2 
+
+Route details:
+route1_1: stop1 stop2 stop3 stop4 stop5 
+route1_2: stop5 stop4 stop3 stop2 stop1 
+route2_1: stop6 stop7 stop8 stop9 stop10 
+route2_2: stop10 stop9 stop8 stop7 stop6 
+route3_1: stop11 stop12 stop13 stop14 stop15 
+route3_2: stop15 stop14 stop13 stop12 
+route4_1: stop21 stop22 stop23 stop24 stop25 
+route4_2: stop25 stop14 stop22 stop12 
+
+*******************
+add bus 2 and 4 again
+
+Bus:1 2 4 
+Line:1 2 3 4 
+Route:route1_1 route1_2 route2_1 route2_2 route3_1 route3_2 route4_1 route4_2 
+Stop:1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 21 22 23 24 25 
+
+Bus details:
+bus 1: Line1 10:00
+bus 2: Line2 13:00
+bus 4: Line4 11:00
+
+Line details:
+Line1: route1_1 route1_2 
+Line2: route2_1 route2_2 
+Line3: route3_1 route3_2 
+Line4: route4_1 route4_2 
+
+Route details:
+route1_1: stop1 stop2 stop3 stop4 stop5 
+route1_2: stop5 stop4 stop3 stop2 stop1 
+route2_1: stop6 stop7 stop8 stop9 stop10 
+route2_2: stop10 stop9 stop8 stop7 stop6 
+route3_1: stop11 stop12 stop13 stop14 stop15 
+route3_2: stop15 stop14 stop13 stop12 
+route4_1: stop21 stop22 stop23 stop24 stop25 
+route4_2: stop25 stop14 stop22 stop12 
+
+*******************
+assign bus 2 with line 3 and time schedule 3
+
+Bus:1 2 4 
+Line:1 2 3 4 
+Route:route1_1 route1_2 route2_1 route2_2 route3_1 route3_2 route4_1 route4_2 
+Stop:1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 21 22 23 24 25 
+
+Bus details:
+bus 1: Line1 10:00
+bus 2: Line3 15:00
+bus 4: Line4 11:00
+
+Line details:
+Line1: route1_1 route1_2 
+Line2: route2_1 route2_2 
+Line3: route3_1 route3_2 
+Line4: route4_1 route4_2 
+
+Route details:
+route1_1: stop1 stop2 stop3 stop4 stop5 
+route1_2: stop5 stop4 stop3 stop2 stop1 
+route2_1: stop6 stop7 stop8 stop9 stop10 
+route2_2: stop10 stop9 stop8 stop7 stop6 
+route3_1: stop11 stop12 stop13 stop14 stop15 
+route3_2: stop15 stop14 stop13 stop12 
+route4_1: stop21 stop22 stop23 stop24 stop25 
+route4_2: stop25 stop14 stop22 stop12 
+
+*******************
+add stops, stop 2 and stop 4 are alreay in it
+
+stop 2 already exist
+stop 4 already exist
+Bus:1 2 4 5 
+Line:1 2 3 4 5 
+Route:route1_1 route1_2 route2_1 route2_2 route3_1 route3_2 route4_1 route4_2 route5_1 route5_2 route5_3 
+Stop:1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 21 22 23 24 25 31 33 35 
+
+Bus details:
+bus 1: Line1 10:00
+bus 2: Line3 15:00
+bus 4: Line4 11:00
+bus 5: Line5 12:00
+
+Line details:
+Line1: route1_1 route1_2 
+Line2: route2_1 route2_2 
+Line3: route3_1 route3_2 
+Line4: route4_1 route4_2 
+Line5: route5_1 route5_2 route5_3 
+
+Route details:
+route1_1: stop1 stop2 stop3 stop4 stop5 
+route1_2: stop5 stop4 stop3 stop2 stop1 
+route2_1: stop6 stop7 stop8 stop9 stop10 
+route2_2: stop10 stop9 stop8 stop7 stop6 
+route3_1: stop11 stop12 stop13 stop14 stop15 
+route3_2: stop15 stop14 stop13 stop12 
+route4_1: stop21 stop22 stop23 stop24 stop25 
+route4_2: stop25 stop14 stop22 stop12 
+route5_1: stop31 stop2 stop33 stop4 stop35 
+route5_2: stop35 stop4 stop33 stop2 stop31 
+route5_3: stop31 stop2 stop33 stop4 
+
